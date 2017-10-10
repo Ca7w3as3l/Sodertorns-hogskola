@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
-  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>Södertörns högskola - Harvard</title>
     <title-short>SH (Harvard)</title-short>
@@ -16,7 +15,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Södertörn Högskola Harvard</summary>
-    <updated>2017-10-07T11:26:09+00:00</updated>
+    <updated>2017-10-10</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="sv">
@@ -111,17 +110,17 @@
     <choose>
       <if variable="URL" type="webpage post-weblog">
         <group>
-          <text value="Available from: "/>
+<!--          <text value="Available from: "/> -->
           <text variable="URL"/>
         </group>
         <group prefix=" [" suffix="]" delimiter=" ">
-          <text term="accessed" text-case="capitalize-first"/>
-          <date variable="accessed" delimiter=" ">
-            <date-part name="day"/>
-            <date-part name="month" form="short" strip-periods="true"/>
+<!--          <text term="accessed" text-case="capitalize-first"/> -->
+          <date variable="accessed" delimiter="-">
             <date-part name="year"/>
+            <date-part name="month" form="numeric-leading-zeros" strip-periods="true"/>
+            <date-part name="day"/>
           </date>
-        </group>
+        </group>        
       </if>
     </choose>
   </macro>

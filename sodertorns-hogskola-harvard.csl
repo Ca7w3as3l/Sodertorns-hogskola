@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
   <info>
     <title>Södertörns högskola - Harvard</title>
@@ -20,6 +20,8 @@
   </info>
   <locale xml:lang="sv">
     <terms>
+      <term name="et-al">et al.
+      </term>
       <term name="page" form="short">
         <single>s.</single>
         <multiple>ss.</multiple>
@@ -322,7 +324,7 @@
       </else-if>
     </choose>
   </macro>
-  <citation and="symbol" et-al-min="6" et-al-use-first="1" et-al-subsequent-min="5" et-al-subsequent-use-first="1" disambiguate-add-names="true" disambiguate-add-givenname="true" disambiguate-add-year-suffix="true" givenname-disambiguation-rule="primary-name" collapse="year">
+  <citation and="symbol" et-al-min="6" et-al-use-first="1" et-al-subsequent-min="4" et-al-subsequent-use-first="1" disambiguate-add-names="true" disambiguate-add-givenname="true" disambiguate-add-year-suffix="true" givenname-disambiguation-rule="primary-name" collapse="year">
     <sort>
       <key macro="issued"/>
       <key macro="author"/>
